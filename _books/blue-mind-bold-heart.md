@@ -1,7 +1,7 @@
 ---
 title: "Blue Mind, Bold Heart"
 author: "Michael Tackett"
-cover_image: ""
+cover_image: "/assets/images/books/great-loop-books-blue-mind-bold-heart.jpg"
 
 summary: "A memoir about the healing and transformative power of water — and the courage it takes to answer its call."
 

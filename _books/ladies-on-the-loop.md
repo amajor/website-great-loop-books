@@ -1,7 +1,7 @@
 ---
 title: "Ladies on the Loop"
 author: "Various"
-cover_image: ""
+cover_image: "/assets/images/books/great-loop-books-ladies-on-the-loop.jpg"
 
 summary: "Thirty-five chapters from women who have traveled America's Great Loop — offering guidance, humor, and honest reflections on the journey."
 

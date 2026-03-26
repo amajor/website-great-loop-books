@@ -6,3 +6,4 @@ Gemfile.lock
 .bundle/
 vendor/
 .obsidian/
+assets/.DS_Store

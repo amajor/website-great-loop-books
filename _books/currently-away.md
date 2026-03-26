@@ -1,7 +1,7 @@
 ---
 title: "Currently Away: How Two Disenchanted People Traveled the Great Loop for Nine Months and Returned to the Start, Energized"
 author: "Bruce Tate"
-cover_image: ""
+cover_image: "/assets/images/books/great-loop-books-currently-away.jpg"
 
 summary: "The story of two people who traded their everyday lives for nine months on America's Great Loop — and came back transformed."
 

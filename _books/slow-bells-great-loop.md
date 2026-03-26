@@ -1,7 +1,7 @@
 ---
 title: "Slow Bells on the Great Loop"
-author: "Unknown"
-cover_image: ""
+author: "Doug Sanderson"
+cover_image: "/assets/images/books/great-loop-books-slow-bells-on-the-great-loop.jpg"
 
 summary: "A thoughtful, unhurried account of life on the Great Loop — a memoir for those who want to savor every mile."
 
