@@ -1,0 +1,45 @@
+title: Great Loop Books
+description: Books for every stage of your Great Loop journey — dreaming, planning, and cruising.
+url: https://greatloopbooks.com
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  books:
+    output: true
+    permalink: /books/:slug/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: books
+    values:
+      layout: book
+
+# Amazon affiliate tag — update with your tag
+amazon_affiliate_tag: "greatloopbooks-20"
+
+# Site author
+author:
+  name: Alison
+  bio: Looper, educator, and founder of Loop Life Academy. Currently cruising America's Great Loop with her family aboard Fika.
+
+# Navigation
+nav_links:
+  - title: All Books
+    url: /books/
+  - title: Book Club
+    url: /book-club/
+  - title: By Region
+    url: /by-region/
+  - title: For Kids
+    url: /for-kids/

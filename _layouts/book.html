@@ -1,0 +1,171 @@
+---
+layout: default
+---
+
+<article class="book-detail">
+  <div class="container">
+
+    <nav class="breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <span>›</span>
+      <a href="{{ '/books/' | relative_url }}">All Books</a>
+      <span>›</span>
+      <span>{{ page.title | truncatewords: 6 }}</span>
+    </nav>
+
+    <div class="book-detail__layout">
+
+      <aside class="book-detail__sidebar">
+        <div class="book-cover-wrap">
+          {% if page.cover_image and page.cover_image != "" %}
+            <img src="{{ page.cover_image }}" alt="Cover of {{ page.title }}" class="book-cover" loading="lazy">
+          {% else %}
+            <div class="book-cover book-cover--placeholder">
+              <span class="placeholder-icon">📖</span>
+              <span class="placeholder-text">{{ page.title | truncatewords: 4 }}</span>
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="buy-links">
+          {% if page.amazon_url and page.amazon_url != "" %}
+            <a href="{{ page.amazon_url }}" class="btn btn--amazon" target="_blank" rel="noopener">
+              Find on Amazon
+            </a>
+          {% endif %}
+          {% if page.bookshop_url and page.bookshop_url != "" %}
+            <a href="{{ page.bookshop_url }}" class="btn btn--bookshop" target="_blank" rel="noopener">
+              Buy on Bookshop.org
+            </a>
+          {% endif %}
+          {% if page.aglca_url and page.aglca_url != "" %}
+            <a href="{{ page.aglca_url }}" class="btn btn--secondary" target="_blank" rel="noopener">
+              Buy from AGLCA
+            </a>
+          {% endif %}
+          {% if page.other_buy_url and page.other_buy_url != "" %}
+            <a href="{{ page.other_buy_url }}" class="btn btn--secondary" target="_blank" rel="noopener">
+              {{ page.other_buy_label | default: "Buy Here" }}
+            </a>
+          {% endif %}
+        </div>
+
+        <div class="book-meta">
+          {% if page.formats %}
+            <div class="meta-item">
+              <span class="meta-label">Formats</span>
+              <span class="meta-value">
+                {% if page.formats.print %}Print{% endif %}
+                {% if page.formats.kindle %}{% if page.formats.print %} · {% endif %}Kindle{% endif %}
+                {% if page.formats.audiobook %}{% if page.formats.print or page.formats.kindle %} · {% endif %}Audiobook{% endif %}
+              </span>
+            </div>
+          {% endif %}
+
+          {% if page.age_group and page.age_group != "" and page.age_group != "adult" %}
+            <div class="meta-item">
+              <span class="meta-label">Age Group</span>
+              <span class="meta-value age-badge age-badge--{{ page.age_group }}">
+                {% case page.age_group %}
+                  {% when "teen" %}Teen / Young Adult
+                  {% when "middle-grade" %}Middle Grade (8–12)
+                  {% when "early-reader" %}Early Reader (6–9)
+                  {% when "picture-book" %}Picture Book
+                  {% when "all-ages" %}All Ages
+                {% endcase %}
+              </span>
+            </div>
+          {% endif %}
+
+          {% if page.book_club %}
+            <div class="meta-item">
+              <span class="meta-label">Book Club</span>
+              <span class="meta-value club-badge">
+                🟣 Dreamers Club Pick
+                {% if page.book_club_month and page.book_club_month != "" %}
+                  <span class="club-month">{{ page.book_club_month }}</span>
+                {% endif %}
+              </span>
+            </div>
+          {% endif %}
+
+          {% if page.regions and page.regions.size > 0 %}
+            <div class="meta-item">
+              <span class="meta-label">Loop Region</span>
+              <span class="meta-value">
+                {% for region in page.regions %}
+                  {% case region %}
+                    {% when "general" %}Great Loop General
+                    {% when "erie-canal" %}Erie Canal
+                    {% when "great-lakes" %}Great Lakes
+                    {% when "river-system" %}River System
+                    {% when "florida-keys-bahamas" %}FL Keys & Bahamas
+                    {% when "florida-east-coast" %}Florida East Coast
+                    {% when "georgia-carolinas" %}Georgia & Carolinas
+                    {% when "norfolk-new-york" %}Norfolk to New York
+                    {% when "canada" %}Canada
+                    {% else %}{{ region | replace: "-", " " | capitalize }}
+                  {% endcase %}
+                  {% unless forloop.last %} · {% endunless %}
+                {% endfor %}
+              </span>
+            </div>
+          {% endif %}
+
+          {% if page.by_looplife %}
+            <div class="meta-item">
+              <span class="meta-value looplife-badge">✍️ Written by Alison</span>
+            </div>
+          {% endif %}
+        </div>
+
+      </aside>
+
+      <div class="book-detail__content">
+
+        <div class="book-categories">
+          {% for cat in page.categories %}
+            <a href="{{ '/books/?cat=' | append: cat | relative_url }}" class="tag tag--{{ cat }}">
+              {% case cat %}
+                {% when "dreaming-planning" %}Dreaming & Planning
+                {% when "memoirs" %}Memoirs
+                {% when "boat-life" %}Boat Life
+                {% when "kids" %}Kids
+                {% when "journals" %}Journals
+                {% when "reference" %}Reference
+                {% when "fiction" %}Fiction
+                {% when "regional" %}Regional
+                {% else %}{{ cat | replace: "-", " " | capitalize }}
+              {% endcase %}
+            </a>
+          {% endfor %}
+        </div>
+
+        <h1 class="book-title">{{ page.title }}</h1>
+        {% if page.author and page.author != "" %}
+          <p class="book-author">by {{ page.author }}</p>
+        {% endif %}
+
+        {% if page.summary and page.summary != "" %}
+          <p class="book-summary-lead">{{ page.summary }}</p>
+        {% endif %}
+
+        {% if page.description and page.description != "" %}
+          <div class="book-description">
+            {{ page.description | markdownify }}
+          </div>
+        {% endif %}
+
+        {% if content and content != "" %}
+          <div class="book-notes">
+            {{ content }}
+          </div>
+        {% endif %}
+
+        <p class="affiliate-note">As an Amazon Associate, I earn from qualifying purchases at no extra cost to you.</p>
+
+      </div>
+    </div>
+
+  </div>
+</article>

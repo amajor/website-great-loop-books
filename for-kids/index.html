@@ -1,0 +1,87 @@
+---
+layout: default
+title: Books for Kids on the Loop
+permalink: /for-kids/
+---
+
+<div class="kids-page">
+
+  <div class="page-hero page-hero--kids">
+    <div class="container">
+      <h1>Books for Young Loopers</h1>
+      <p>Journals, adventures, and read-alouds for the kids on board — sorted by age group.</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    {% assign kids_books = site.books | where_exp: "book", "book.categories contains 'kids' or book.age_group != 'adult'" %}
+
+    <!-- Journals by Alison -->
+    {% assign kid_journals = site.books | where: "by_looplife", true | where_exp: "book", "book.categories contains 'kids' or book.categories contains 'journals'" %}
+    {% if kid_journals.size > 0 %}
+      <section class="age-section">
+        <div class="age-section__header">
+          <h2>📔 Great Loop Journals — for Every Age</h2>
+          <p>Designed to help young travelers capture their Loop journey — written by Alison of Loop Life Academy.</p>
+        </div>
+        <div class="book-grid">
+          {% for book in kid_journals %}
+            {% include book-card.html book=book %}
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    <!-- Middle Grade -->
+    {% assign middle_grade = site.books | where: "age_group", "middle-grade" %}
+    {% if middle_grade.size > 0 %}
+      <section class="age-section">
+        <div class="age-section__header">
+          <h2>📚 Middle Grade (Ages 8–12)</h2>
+          <p>Great independent reads and read-alouds for the elementary and middle school years.</p>
+        </div>
+        <div class="book-grid">
+          {% for book in middle_grade %}
+            {% include book-card.html book=book %}
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    <!-- Early Reader -->
+    {% assign early_reader = site.books | where: "age_group", "early-reader" %}
+    {% if early_reader.size > 0 %}
+      <section class="age-section">
+        <div class="age-section__header">
+          <h2>🌟 Early Readers (Ages 6–9)</h2>
+          <p>Picture books and beginning chapter books for your youngest crew members.</p>
+        </div>
+        <div class="book-grid">
+          {% for book in early_reader %}
+            {% include book-card.html book=book %}
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    <!-- Teen -->
+    {% assign teen_books = site.books | where: "age_group", "teen" %}
+    {% if teen_books.size > 0 %}
+      <section class="age-section">
+        <div class="age-section__header">
+          <h2>🧭 Teen / Young Adult</h2>
+          <p>For the teenagers on board who want something just for them.</p>
+        </div>
+        <div class="book-grid">
+          {% for book in teen_books %}
+            {% include book-card.html book=book %}
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    <p class="affiliate-note">As an Amazon Associate, I earn from qualifying purchases at no extra cost to you.</p>
+
+  </div>
+</div>

@@ -1,0 +1,85 @@
+---
+layout: default
+title: All Great Loop Books
+permalink: /books/
+---
+
+<div class="books-page">
+  <div class="page-hero">
+    <div class="container">
+      <h1>All Great Loop Books</h1>
+      <p>{{ site.books | size }} books — for every stage of your Loop journey</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- Filter bar -->
+    <div class="filter-bar" id="filter-bar">
+      <button class="filter-btn active" data-filter="all">All Books</button>
+      <button class="filter-btn" data-filter="dreaming-planning">Dreaming & Planning</button>
+      <button class="filter-btn" data-filter="memoirs">Memoirs</button>
+      <button class="filter-btn" data-filter="boat-life">Boat Life</button>
+      <button class="filter-btn" data-filter="kids">Kids</button>
+      <button class="filter-btn" data-filter="journals">Journals</button>
+      <button class="filter-btn" data-filter="reference">Reference</button>
+      <button class="filter-btn" data-filter="regional">Regional</button>
+      <button class="filter-btn" data-filter="book-club">📚 Book Club</button>
+    </div>
+
+    <!-- Book Club picks first, then rest -->
+    {% assign all_books = site.books | sort: "title" %}
+
+    <div class="book-grid book-grid--all" id="books-grid">
+      {% for book in all_books %}
+        <div class="book-grid__item"
+             data-categories="{{ book.categories | join: ' ' }}"
+             data-club="{% if book.book_club %}book-club{% endif %}">
+          {% include book-card.html book=book %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <p class="books-count" id="books-count">Showing {{ all_books | size }} books</p>
+
+  </div>
+</div>
+
+<script>
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const items = document.querySelectorAll('.book-grid__item');
+  const countEl = document.getElementById('books-count');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+      let visible = 0;
+
+      items.forEach(item => {
+        const cats = item.dataset.categories || '';
+        const club = item.dataset.club || '';
+        const combined = cats + ' ' + club;
+
+        if (filter === 'all' || combined.includes(filter)) {
+          item.style.display = '';
+          visible++;
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      countEl.textContent = `Showing ${visible} book${visible !== 1 ? 's' : ''}`;
+    });
+  });
+
+  // Handle ?cat= URL param on load
+  const params = new URLSearchParams(window.location.search);
+  const catParam = params.get('cat');
+  if (catParam) {
+    const matchBtn = document.querySelector(`[data-filter="${catParam}"]`);
+    if (matchBtn) matchBtn.click();
+  }
+</script>

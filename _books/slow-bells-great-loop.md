@@ -1,0 +1,31 @@
+---
+title: "Slow Bells on the Great Loop"
+author: "Unknown"
+cover_image: ""
+
+summary: "A thoughtful, unhurried account of life on the Great Loop — a memoir for those who want to savor every mile."
+
+description: |
+  A Kindle-only title from the Dreamers Book Club reading list.
+
+amazon_url: "https://amzn.to/slowbells"
+
+categories:
+  - memoirs
+
+regions:
+  - general
+
+age_group: adult
+book_club: true
+book_club_month: "February 2026"
+
+formats:
+  kindle: true
+  print: false
+  audiobook: false
+
+tags:
+  - memoir
+  - great loop
+---

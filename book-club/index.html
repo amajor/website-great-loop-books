@@ -1,0 +1,75 @@
+---
+layout: default
+title: Dreamers Book Club
+permalink: /book-club/
+---
+
+<div class="book-club-page">
+
+  <div class="page-hero page-hero--club">
+    <div class="container">
+      <span class="eyebrow">🟣 For Great Loop Dreamers</span>
+      <h1>Dreamers Book Club</h1>
+      <p>A monthly book club reading Great Loop memoirs and adventures — for everyone who's dreaming, planning, or currently cruising.</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="club-intro">
+      <p>Each month, the Dreamers Book Club gathers around a new Great Loop book. Members discuss in a private community, share questions and reflections, and connect with other Loopers at every stage of the journey. This page is the complete reading archive — every book we've read together.</p>
+    </div>
+
+    <h2 class="section-title">The Reading List</h2>
+
+    <div class="club-reading-list">
+      {% assign club_books = site.books | where: "book_club", true | sort: "book_club_month" | reverse %}
+      {% for book in club_books %}
+        <div class="club-book-row">
+          <div class="club-book-row__cover">
+            {% if book.cover_image and book.cover_image != "" %}
+              <a href="{{ book.url | relative_url }}">
+                <img src="{{ book.cover_image }}" alt="{{ book.title }}" loading="lazy">
+              </a>
+            {% else %}
+              <a href="{{ book.url | relative_url }}" class="cover-placeholder-link">
+                <div class="cover-placeholder">📖</div>
+              </a>
+            {% endif %}
+          </div>
+
+          <div class="club-book-row__info">
+            {% if book.book_club_month and book.book_club_month != "" %}
+              <span class="club-book-row__month">{{ book.book_club_month }}</span>
+            {% endif %}
+            <h3><a href="{{ book.url | relative_url }}">{{ book.title }}</a></h3>
+            {% if book.author and book.author != "" %}
+              <p class="club-book-row__author">by {{ book.author }}</p>
+            {% endif %}
+            {% if book.summary and book.summary != "" %}
+              <p class="club-book-row__summary">{{ book.summary }}</p>
+            {% endif %}
+            <div class="club-book-row__links">
+              <a href="{{ book.url | relative_url }}" class="link-arrow">Book details →</a>
+              {% if book.amazon_url and book.amazon_url != "" %}
+                <a href="{{ book.amazon_url }}" class="btn btn--sm btn--amazon" target="_blank" rel="noopener">Find on Amazon</a>
+              {% endif %}
+              {% if book.bookshop_url and book.bookshop_url != "" %}
+                <a href="{{ book.bookshop_url }}" class="btn btn--sm btn--bookshop" target="_blank" rel="noopener">Bookshop.org</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="club-cta-box">
+      <h3>Want to read along?</h3>
+      <p>The Dreamers Book Club is part of the Loop Life Academy membership. Join to get the current month's book, access the discussion community, and connect with Loopers at every stage of the journey.</p>
+      <a href="https://www.looplifeacademy.com" class="btn btn--primary" target="_blank" rel="noopener">Learn More at Loop Life Academy →</a>
+    </div>
+
+    <p class="affiliate-note">As an Amazon Associate, I earn from qualifying purchases at no extra cost to you.</p>
+
+  </div>
+</div>

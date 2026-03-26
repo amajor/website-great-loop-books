@@ -1,0 +1,51 @@
+---
+layout: default
+title: Books by Loop Region
+permalink: /by-region/
+---
+
+<div class="by-region-page">
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>Books by Loop Region</h1>
+      <p>Follow the Loop route and discover books that match where you are — or where you're headed next.</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    {% assign regions_data = "dreaming-planning|🧭|Dreaming & Planning|Whether you're dreaming or deep in planning mode — these books will fuel the fire.,norfolk-new-york|⚓|Norfolk to New York|History, mystery, and maritime lore from the Chesapeake Bay to the Hudson River.,erie-canal|🏗️|The Erie Canal|Engineering marvel, historical corridor, and gateway to the heartland.,canada|🍁|Canada|Georgian Bay, the North Channel, and Prince Edward Island — books for a beautiful stretch.,great-lakes|🌊|The Great Lakes|These inland seas have epic stories. Here are some books to read while crossing them.,river-system|🛥️|The River System|From Chicago down to Mobile or New Orleans — the rivers that shaped America.,florida-keys-bahamas|🐠|FL Keys & The Bahamas|Island vibes and crystal water — books to read in paradise.,florida-east-coast|🚀|Florida's East Coast|Space launches, St. Augustine history, and the Atlantic ICW.,georgia-carolinas|🌿|Georgia & The Carolinas|Southern charm and history along the Atlantic ICW." | split: "," %}
+
+    {% for region_entry in regions_data %}
+      {% assign parts = region_entry | split: "|" %}
+      {% assign region_slug = parts[0] %}
+      {% assign region_icon = parts[1] %}
+      {% assign region_name = parts[2] %}
+      {% assign region_desc = parts[3] %}
+
+      {% assign region_books = site.books | where_exp: "book", "book.regions contains region_slug" %}
+
+      {% if region_books.size > 0 %}
+        <section class="region-section" id="{{ region_slug }}">
+          <div class="region-section__header">
+            <span class="region-section__icon">{{ region_icon }}</span>
+            <div>
+              <h2>{{ region_name }}</h2>
+              <p>{{ region_desc }}</p>
+            </div>
+          </div>
+
+          <div class="book-grid">
+            {% for book in region_books %}
+              {% include book-card.html book=book %}
+            {% endfor %}
+          </div>
+        </section>
+      {% endif %}
+    {% endfor %}
+
+    <p class="affiliate-note">As an Amazon Associate, I earn from qualifying purchases at no extra cost to you.</p>
+
+  </div>
+</div>

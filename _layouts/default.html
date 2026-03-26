@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.summary %}{{ page.summary }}{% elsif page.description %}{{ page.description | strip_html | truncatewords: 30 }}{% else %}{{ site.description }}{% endif %}">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="{{ '/' | relative_url }}" class="site-logo">
+        <span class="logo-text">Great Loop Books</span>
+        <span class="logo-sub">for dreamers, planners & loopers</span>
+      </a>
+      <nav class="site-nav">
+        {% for link in site.nav_links %}
+          <a href="{{ link.url | relative_url }}" class="nav-link {% if page.url == link.url %}active{% endif %}">{{ link.title }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>As an Amazon Associate, I earn from qualifying purchases at no extra cost to you.</p>
+      <p>Made with ♥ by a Looper, for Loopers. &copy; {{ 'now' | date: "%Y" }} Great Loop Books.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

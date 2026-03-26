@@ -1,0 +1,66 @@
+{% comment %}
+  Usage: {% include book-card.html book=book %}
+  Renders a compact book card for listing pages.
+{% endcomment %}
+<article class="book-card {% if include.book.book_club %}book-card--club{% endif %} {% if include.book.by_looplife %}book-card--looplife{% endif %}">
+  <a href="{{ include.book.url | relative_url }}" class="book-card__link">
+
+    <div class="book-card__cover">
+      {% if include.book.cover_image and include.book.cover_image != "" %}
+        <img src="{{ include.book.cover_image }}" alt="{{ include.book.title }}" loading="lazy">
+      {% else %}
+        <div class="book-card__cover-placeholder">📖</div>
+      {% endif %}
+      {% if include.book.book_club %}
+        <span class="book-card__club-badge" title="Dreamers Book Club Pick">🟣</span>
+      {% endif %}
+      {% if include.book.by_looplife %}
+        <span class="book-card__looplife-badge" title="Written by Alison">✍️</span>
+      {% endif %}
+    </div>
+
+    <div class="book-card__body">
+      <h3 class="book-card__title">{{ include.book.title }}</h3>
+      {% if include.book.author and include.book.author != "" %}
+        <p class="book-card__author">{{ include.book.author }}</p>
+      {% endif %}
+      {% if include.book.summary and include.book.summary != "" %}
+        <p class="book-card__summary">{{ include.book.summary | truncatewords: 20 }}</p>
+      {% endif %}
+
+      <div class="book-card__tags">
+        {% if include.book.age_group and include.book.age_group != "adult" and include.book.age_group != "" %}
+          <span class="tag tag--age">
+            {% case include.book.age_group %}
+              {% when "teen" %}Teen
+              {% when "middle-grade" %}Middle Grade
+              {% when "early-reader" %}Early Reader
+              {% when "picture-book" %}Picture Book
+              {% when "all-ages" %}All Ages
+            {% endcase %}
+          </span>
+        {% endif %}
+        {% for cat in include.book.categories limit: 2 %}
+          <span class="tag tag--{{ cat }}">
+            {% case cat %}
+              {% when "dreaming-planning" %}Dream & Plan
+              {% when "memoirs" %}Memoir
+              {% when "boat-life" %}Boat Life
+              {% when "kids" %}Kids
+              {% when "journals" %}Journal
+              {% when "reference" %}Reference
+              {% when "fiction" %}Fiction
+              {% when "regional" %}Regional
+              {% else %}{{ cat | replace: "-", " " | capitalize }}
+            {% endcase %}
+          </span>
+        {% endfor %}
+      </div>
+    </div>
+
+  </a>
+
+  {% if include.book.amazon_url and include.book.amazon_url != "" %}
+    <a href="{{ include.book.amazon_url }}" class="book-card__buy" target="_blank" rel="noopener">Find on Amazon →</a>
+  {% endif %}
+</article>
