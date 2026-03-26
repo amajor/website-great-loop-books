@@ -1,5 +1,6 @@
 ---
-title: "Currently Away: How Two Disenchanted People Traveled the Great Loop for Nine Months and Returned to the Start, Energized"
+title: "Currently Away"
+subtitle: "How Two Disenchanted People Traveled the Great Loop for Nine Months and Returned to the Start, Energized"
 author: "Bruce Tate"
 cover_image: "/assets/images/books/great-loop-books-currently-away.jpg"
 

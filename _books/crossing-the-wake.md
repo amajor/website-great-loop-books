@@ -1,5 +1,6 @@
 ---
-title: "Crossing the Wake: One Woman's Great Loop Adventure"
+title: "Crossing the Wake"
+subtitle: "One Woman's Great Loop Adventure"
 author: "Tanya Binford"
 cover_image: "https://covers.openlibrary.org/b/id/10471920-L.jpg"
 

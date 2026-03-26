@@ -21,6 +21,9 @@
 
     <div class="book-card__body">
       <h3 class="book-card__title">{{ include.book.title }}</h3>
+      {% if include.book.subtitle and include.book.subtitle != "" %}
+        <p class="book-card__subtitle">{{ include.book.subtitle | truncatewords: 10 }}</p>
+      {% endif %}
       {% if include.book.author and include.book.author != "" %}
         <p class="book-card__author">{{ include.book.author }}</p>
       {% endif %}
