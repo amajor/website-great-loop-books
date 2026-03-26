@@ -644,8 +644,7 @@ a:hover { color: var(--accent-dark); }
 }
 
 .book-cover-wrap {
-  position: sticky;
-  top: 5rem;
+  position: static;
 }
 .book-cover {
   width: 100%;
