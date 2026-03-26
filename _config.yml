@@ -30,7 +30,7 @@ amazon_affiliate_tag: "greatloopbooks-20"
 
 # Site author
 author:
-  name: Alison
+  name: Alison Major
   bio: Looper, educator, and founder of Loop Life Academy. Currently cruising America's Great Loop with her family aboard Fika.
 
 # Navigation
@@ -43,3 +43,12 @@ nav_links:
     url: /by-region/
   - title: For Kids
     url: /for-kids/
+
+# Jekyll processes everything by default — any folder or file not starting with _ or . gets copied into _site/ and served publicly. That means a docs/ folder would be live on your site unless you exclude it.
+
+# Exclude from Processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .obsidian/
