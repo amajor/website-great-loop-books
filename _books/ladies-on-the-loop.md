@@ -24,6 +24,7 @@ regions:
 age_group: adult
 book_club: true
 book_club_month: "December 2025"
+book_club_date: "2025-12"
 
 formats:
   kindle: true

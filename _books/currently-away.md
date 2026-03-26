@@ -23,6 +23,10 @@ age_group: adult
 
 book_club: true
 book_club_month: "April 2026"
+book_club_date: "2026-04"
+
+featured: true
+featured_month: "2026-04"
 
 formats:
   kindle: true

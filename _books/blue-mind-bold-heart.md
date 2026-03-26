@@ -20,6 +20,7 @@ regions:
 age_group: adult
 book_club: true
 book_club_month: "January 2026"
+book_club_date: "2026-01"
 
 formats:
   kindle: true

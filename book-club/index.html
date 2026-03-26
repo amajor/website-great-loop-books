@@ -23,7 +23,7 @@ permalink: /book-club/
     <h2 class="section-title">The Reading List</h2>
 
     <div class="club-reading-list">
-      {% assign club_books = site.books | where: "book_club", true | sort: "book_club_month" | reverse %}
+      {% assign club_books = site.books | where: "book_club", true | sort: "book_club_date" | reverse %}
       {% for book in club_books %}
         <div class="club-book-row">
           <div class="club-book-row__cover">

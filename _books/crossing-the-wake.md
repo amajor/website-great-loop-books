@@ -25,6 +25,7 @@ age_group: adult
 
 book_club: true
 book_club_month: "March 2026"
+book_club_date: "2026-03"
 
 featured: true
 featured_month: "2026-03"
