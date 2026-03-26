@@ -10,7 +10,9 @@ description: |
 
   A perfect read for anyone in the dreaming or planning stage — or for those who want a shot of courage for the journey ahead.
 
-amazon_asin: ""
+amazon_asin: "B01M63E3F3"
+other_buy_url: "https://tanyagreatloop.blogspot.com/"
+other_buy_label: "Author's Website"
 
 categories:
   - dreaming-planning

@@ -8,7 +8,7 @@ summary: "A memoir about the healing and transformative power of water — and t
 description: |
   A Dreamers Book Club pick that resonated deeply with the community.
 
-amazon_asin: ""
+amazon_asin: "B0FYNLGJH6"
 
 categories:
   - memoirs

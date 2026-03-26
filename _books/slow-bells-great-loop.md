@@ -8,7 +8,9 @@ summary: "A thoughtful, unhurried account of life on the Great Loop — a memoir
 description: |
   A Kindle-only title from the Dreamers Book Club reading list.
 
-amazon_asin: ""
+amazon_asin: "B08P69GPTT"
+other_buy_url: "https://www.seattleboatguy.com/"
+other_buy_label: "Author's Website"
 
 categories:
   - memoirs

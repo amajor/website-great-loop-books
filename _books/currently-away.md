@@ -8,9 +8,9 @@ summary: "The story of two people who traded their everyday lives for nine month
 description: |
   Currently Away follows a couple as they travel the Great Loop for nine months, returning home not just with stories, but with a renewed sense of life and purpose. It's a great read for anyone who's been dreaming about what it might feel like to actually do this.
 
-amazon_asin: ""
-other_buy_url: ""
-other_buy_label: ""
+amazon_asin: "B0CQ3W5GZY"
+other_buy_url: "https://www.currentlytheboat.com/"
+other_buy_label: "Author's Website"
 
 categories:
   - dreaming-planning

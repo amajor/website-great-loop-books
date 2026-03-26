@@ -8,8 +8,8 @@ summary: "A beloved Great Loop classic — the story of a couple who traded life
 description: |
   A beloved book in the Great Loop community. Also available on the AGLCA website.
 
-amazon_asin: ""
-aglca_url: "https://www.greatloop.org"
+amazon_asin: "0966914031"
+aglca_url: "https://www.greatloop.org/product/honey-let-s-get-a-boat.html"
 other_buy_label: "Buy from AGLCA"
 
 categories:
