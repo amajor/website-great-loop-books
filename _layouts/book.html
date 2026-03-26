@@ -160,7 +160,8 @@ layout: default
           </div>
         {% endif %}
 
-        {% if content and content != "" %}
+        {% assign notes_content = content | strip | remove: "\n" %}
+        {% if notes_content.size > 0 %}
           <div class="book-notes">
             {{ content }}
           </div>
