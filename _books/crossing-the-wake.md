@@ -10,7 +10,7 @@ description: |
 
   A perfect read for anyone in the dreaming or planning stage — or for those who want a shot of courage for the journey ahead.
 
-amazon_url: "https://amzn.to/crossingthewake"
+amazon_asin: ""
 
 categories:
   - dreaming-planning

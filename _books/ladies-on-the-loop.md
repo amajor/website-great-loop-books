@@ -10,7 +10,7 @@ description: |
 
   These women provide insights into overcoming challenges, finding joy, and personal growth during live-aboard and long-distance boat travel. Also available as a free PDF — search "Ladies on the Loop PDF" online.
 
-amazon_url: "https://amzn.to/ladiesontheloop"
+amazon_asin: ""
 
 categories:
   - dreaming-planning

@@ -10,7 +10,7 @@ description: |
 
   A staple on many Loop boats. The "Hot-Weather Meals" section is especially handy in the Carolinas.
 
-amazon_url: "https://amzn.to/boatgalley"
+amazon_asin: ""
 
 categories:
   - boat-life

@@ -8,7 +8,7 @@ summary: "A beloved Great Loop classic — the story of a couple who traded life
 description: |
   A beloved book in the Great Loop community. Also available on the AGLCA website.
 
-amazon_url: "https://amzn.to/honeyletsgetaboat"
+amazon_asin: ""
 aglca_url: "https://www.greatloop.org"
 other_buy_label: "Buy from AGLCA"
 

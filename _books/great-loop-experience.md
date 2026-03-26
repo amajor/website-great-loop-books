@@ -8,7 +8,7 @@ summary: "A comprehensive planning guide covering finances, insurance, boat sele
 description: |
   This guide helps you plan the journey of a lifetime, covering crucial financial, medical, insurance, and lifestyle considerations. It includes detailed advice on choosing and outfitting your boat, route planning, necessary guidebooks and charts, types of locks, dealing with customs, and navigating open water passages.
 
-amazon_url: "https://amzn.to/greatloopexperience"
+amazon_asin: ""
 
 categories:
   - dreaming-planning

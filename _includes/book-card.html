@@ -60,7 +60,8 @@
 
   </a>
 
-  {% if include.book.amazon_url and include.book.amazon_url != "" %}
-    <a href="{{ include.book.amazon_url }}" class="book-card__buy" target="_blank" rel="noopener">Find on Amazon →</a>
+  {% if include.book.amazon_asin and include.book.amazon_asin != "" %}
+    {% assign amazon_url = "https://www.amazon.com/dp/" | append: include.book.amazon_asin | append: "/?tag=" | append: site.amazon_affiliate_tag %}
+    <a href="{{ amazon_url }}" class="book-card__buy" target="_blank" rel="noopener">Find on Amazon →</a>
   {% endif %}
 </article>

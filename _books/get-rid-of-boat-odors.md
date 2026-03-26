@@ -5,7 +5,7 @@ cover_image: "https://covers.openlibrary.org/b/id/8895855-L.jpg"
 summary: "The ultimate resource for solving boat odor problems — addresses sources rather than masking them."
 description: |
   This book provides comprehensive guidance on eliminating boat odors by addressing their sources rather than masking them. Ideal for boat owners and professionals, and the ultimate resource for solving boat odor problems.
-amazon_url: "https://amzn.to/boatodors"
+amazon_asin: ""
 categories:
   - boat-life
   - reference

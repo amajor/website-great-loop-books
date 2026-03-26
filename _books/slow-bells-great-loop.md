@@ -8,7 +8,7 @@ summary: "A thoughtful, unhurried account of life on the Great Loop — a memoir
 description: |
   A Kindle-only title from the Dreamers Book Club reading list.
 
-amazon_url: "https://amzn.to/slowbells"
+amazon_asin: ""
 
 categories:
   - memoirs

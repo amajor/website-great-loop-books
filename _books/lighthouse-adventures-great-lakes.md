@@ -5,7 +5,7 @@ cover_image: "https://covers.openlibrary.org/b/id/941394-L.jpg"
 summary: "Completely factual short and long stories of shipwrecks, courage, and Great Lakes lore — something for everyone on the lakes."
 description: |
   This book contains short stories, long stories, technical descriptions, shipwrecks, acts of courage, drawings, maps, and photos. Every adventure is completely factual and the result of detailed research — no fiction here. These adventures actually happened, the people named actually existed, and their trials and tribulations really took place.
-amazon_url: "https://amzn.to/lighthouseadventures"
+amazon_asin: ""
 categories:
   - regional
   - reference

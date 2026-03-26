@@ -28,8 +28,9 @@ layout: default
         </div>
 
         <div class="buy-links">
-          {% if page.amazon_url and page.amazon_url != "" %}
-            <a href="{{ page.amazon_url }}" class="btn btn--amazon" target="_blank" rel="noopener">
+          {% if page.amazon_asin and page.amazon_asin != "" %}
+            {% assign amazon_url = "https://www.amazon.com/dp/" | append: page.amazon_asin | append: "/?tag=" | append: site.amazon_affiliate_tag %}
+            <a href="{{ amazon_url }}" class="btn btn--amazon" target="_blank" rel="noopener">
               Find on Amazon
             </a>
           {% endif %}

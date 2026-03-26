@@ -10,7 +10,7 @@ description: |
 
   A great book to get for planning, for dreaming, and to have on board while you're on the Loop.
 
-amazon_url: "https://amzn.to/looperscompanion"
+amazon_asin: ""
 
 categories:
   - dreaming-planning

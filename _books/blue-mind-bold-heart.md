@@ -8,7 +8,7 @@ summary: "A memoir about the healing and transformative power of water — and t
 description: |
   A Dreamers Book Club pick that resonated deeply with the community.
 
-amazon_url: "https://amzn.to/bluemindbold"
+amazon_asin: ""
 
 categories:
   - memoirs

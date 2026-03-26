@@ -5,7 +5,7 @@ cover_image: ""
 summary: "Get up close with the world's most skilled hunters — eagles, vultures, and more — in a fun graphic novel format for elementary readers."
 description: |
   Get up close and personal with some of the world's most skilled hunters! Armed with razor-sharp claws, keen eyesight, and killer instincts, birds of prey can make a meal of rodents, fish, snakes, and even kangaroos. Science Comics are a fun way to learn about science topics. Recommended for Elementary School.
-amazon_url: "https://amzn.to/sciencecomicbirds"
+amazon_asin: ""
 categories:
   - regional
   - kids
