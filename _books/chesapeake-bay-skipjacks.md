@@ -5,7 +5,7 @@ cover_image: "https://covers.openlibrary.org/b/id/1617120-L.jpg"
 summary: "Documents the skipjack's storied role in the Chesapeake Bay oyster dredging industry — best read near Deltaville, Virginia."
 description: |
   This book documents the skipjack and its role in the oyster dredging industry, describing natural and manmade disasters that affected the trade. Best paired with a visit to the Deltaville Maritime Museum and the Skipjack Virginia (built in 1973).
-amazon_asin: ""
+amazon_asin: "0870334514"
 categories:
   - regional
   - reference
@@ -17,4 +17,8 @@ tags:
   - history
   - chesapeake
   - maritime
+formats:
+  kindle: false
+  print: true
+  audiobook: false
 ---
