@@ -19,6 +19,11 @@ categories:
 regions:
   - general
 
+featured: false
+featured_month: ""
+featured_region: "florida"
+pull_quote: "A beloved classic in the Great Loop community — warm, funny, and completely infectious."
+
 age_group: adult
 book_club: true
 book_club_month: "November 2025"
