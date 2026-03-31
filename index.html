@@ -29,19 +29,42 @@ title: Great Loop Books
     </div>
 
     {% assign current_month = 'now' | date: "%Y-%m" %}
-    {% assign featured_books = site.books | where: "featured", true %}
-    {% assign month_books = site.books | where: "featured_month", current_month %}
 
-    {% if month_books.size > 0 %}
-      {% assign display_books = month_books %}
-    {% else %}
-      {% assign display_books = featured_books | limit: 3 %}
+    {% comment %} Determine fallback region from current month {% endcomment %}
+    {% assign m = 'now' | date: "%-m" | plus: 0 %}
+    {% if m == 1 or m == 2 %}
+      {% assign fallback_region = "florida" %}
+    {% elsif m == 3 or m == 4 %}
+      {% assign fallback_region = "georgia-carolinas" %}
+    {% elsif m == 5 %}
+      {% assign fallback_region = "chesapeake" %}
+    {% elsif m == 6 or m == 7 %}
+      {% assign fallback_region = "erie-canada" %}
+    {% elsif m == 8 or m == 9 %}
+      {% assign fallback_region = "great-lakes" %}
+    {% elsif m == 10 or m == 11 or m == 12 %}
+      {% assign fallback_region = "river-system" %}
     {% endif %}
 
-    <div class="book-grid book-grid--featured">
-      {% for book in display_books limit: 3 %}
-        {% include book-card.html book=book %}
-      {% endfor %}
+    {% comment %} Adult pick — tier 1: exact month, tier 2: region default {% endcomment %}
+    {% assign adult_pick = site.books | where: "featured_month", current_month | where: "age_group", "adult" | first %}
+    {% unless adult_pick %}
+      {% assign adult_pick = site.books | where: "featured_region", fallback_region | where: "age_group", "adult" | first %}
+    {% endunless %}
+
+    {% comment %} Kids pick — tier 1: exact month, tier 2: region default {% endcomment %}
+    {% assign kids_pick = site.books | where: "featured_month", current_month | where_exp: "book", "book.age_group != 'adult'" | first %}
+    {% unless kids_pick %}
+      {% assign kids_pick = site.books | where: "featured_region", fallback_region | where_exp: "book", "book.age_group != 'adult'" | first %}
+    {% endunless %}
+
+    <div class="featured-grid">
+      {% if adult_pick %}
+        {% include featured-card.html book=adult_pick %}
+      {% endif %}
+      {% if kids_pick %}
+        {% include featured-card.html book=kids_pick %}
+      {% endif %}
     </div>
 
     <div class="section-cta">

@@ -29,6 +29,8 @@ book_club_date: ""
 
 featured: false
 featured_month: ""
+featured_region: ""
+pull_quote: ""
 
 by_looplife: false
 

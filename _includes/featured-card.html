@@ -1,0 +1,79 @@
+{% comment %}
+  Usage: {% include featured-card.html book=book %}
+  Large horizontal card for the homepage featured section.
+{% endcomment %}
+<article class="featured-card {% if include.book.book_club %}featured-card--club{% endif %}">
+  <a href="{{ include.book.url | relative_url }}" class="featured-card__cover-link">
+    <div class="featured-card__cover">
+      {% if include.book.cover_image and include.book.cover_image != "" %}
+        <img src="{{ include.book.cover_image }}" alt="{{ include.book.title }}" loading="lazy">
+      {% else %}
+        <div class="featured-card__cover-placeholder">📖</div>
+      {% endif %}
+      {% if include.book.book_club %}
+        <span class="featured-card__badge featured-card__badge--club" title="Dreamers Book Club Pick">🟣 Book Club</span>
+      {% endif %}
+      {% if include.book.by_looplife %}
+        <span class="featured-card__badge featured-card__badge--looplife">✍️ By Alison</span>
+      {% endif %}
+    </div>
+  </a>
+
+  <div class="featured-card__body">
+    <div class="featured-card__meta">
+      {% for cat in include.book.categories limit: 2 %}
+        <span class="tag tag--{{ cat }}">
+          {% case cat %}
+            {% when "dreaming-planning" %}Dream & Plan
+            {% when "memoirs" %}Memoir
+            {% when "boat-life" %}Boat Life
+            {% when "kids" %}Kids
+            {% when "journals" %}Journal
+            {% when "reference" %}Reference
+            {% when "fiction" %}Fiction
+            {% when "regional" %}Regional
+            {% else %}{{ cat | replace: "-", " " | capitalize }}
+          {% endcase %}
+        </span>
+      {% endfor %}
+      {% if include.book.age_group and include.book.age_group != "adult" and include.book.age_group != "" %}
+        <span class="tag tag--age">
+          {% case include.book.age_group %}
+            {% when "teen" %}Teen
+            {% when "middle-grade" %}Middle Grade
+            {% when "early-reader" %}Early Reader
+            {% when "picture-book" %}Picture Book
+            {% when "all-ages" %}All Ages
+          {% endcase %}
+        </span>
+      {% endif %}
+    </div>
+
+    <a href="{{ include.book.url | relative_url }}" class="featured-card__title-link">
+      <h3 class="featured-card__title">{{ include.book.title }}</h3>
+      {% if include.book.subtitle and include.book.subtitle != "" %}
+        <p class="featured-card__subtitle">{{ include.book.subtitle }}</p>
+      {% endif %}
+    </a>
+
+    {% if include.book.author and include.book.author != "" %}
+      <p class="featured-card__author">by {{ include.book.author }}</p>
+    {% endif %}
+
+    {% if include.book.pull_quote and include.book.pull_quote != "" %}
+      <blockquote class="featured-card__quote">{{ include.book.pull_quote }}</blockquote>
+    {% elsif include.book.summary and include.book.summary != "" %}
+      <p class="featured-card__summary">{{ include.book.summary }}</p>
+    {% endif %}
+
+    <div class="featured-card__actions">
+      <a href="{{ include.book.url | relative_url }}" class="btn btn--outline btn--sm">Learn More</a>
+      {% if include.book.amazon_asin and include.book.amazon_asin != "" %}
+        {% assign amazon_url = "https://www.amazon.com/dp/" | append: include.book.amazon_asin | append: "/?tag=" | append: site.amazon_affiliate_tag %}
+        <a href="{{ amazon_url }}" class="btn btn--amazon btn--sm" target="_blank" rel="noopener">Find on Amazon</a>
+      {% elsif include.book.amazon_url and include.book.amazon_url != "" %}
+        <a href="{{ include.book.amazon_url }}" class="btn btn--amazon btn--sm" target="_blank" rel="noopener">Find on Amazon</a>
+      {% endif %}
+    </div>
+  </div>
+</article>

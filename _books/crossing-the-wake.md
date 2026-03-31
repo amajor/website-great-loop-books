@@ -29,6 +29,8 @@ book_club_month: "March 2026"
 book_club_date: "2026-03"
 
 featured: true
+pull_quote: "A bold, honest memoir about a woman who decided not to wait for retirement to live her dream."
+featured_region: "georgia-carolinas"
 featured_month: "2026-03"
 
 formats:
