@@ -21,6 +21,11 @@ categories:
 regions:
   - general
 
+featured: false
+featured_month: ""
+featured_region: "erie-canada"
+pull_quote: "35 chapters from women who have traveled the Great Loop — guidance, humor, and honest reflection."
+
 age_group: adult
 book_club: true
 book_club_month: "December 2025"

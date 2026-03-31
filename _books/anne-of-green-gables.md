@@ -12,6 +12,11 @@ categories:
   - fiction
 regions:
   - canada
+featured: false
+featured_month: ""
+featured_region: "erie-canada"
+pull_quote: ""
+
 age_group: middle-grade
 book_club: false
 tags:
