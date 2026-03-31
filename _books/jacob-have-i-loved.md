@@ -12,6 +12,11 @@ categories:
   - fiction
 regions:
   - norfolk-new-york
+featured: false
+featured_month: ""
+featured_region: "chesapeake"
+pull_quote: ""
+
 age_group: middle-grade
 book_club: false
 tags:

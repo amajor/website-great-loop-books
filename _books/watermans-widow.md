@@ -12,6 +12,11 @@ categories:
   - fiction
 regions:
   - norfolk-new-york
+featured: false
+featured_month: ""
+featured_region: "chesapeake"
+pull_quote: "Best read on a cold, rainy day with bourbon — a murder mystery woven into Chesapeake Bay history."
+
 age_group: adult
 book_club: false
 tags:
