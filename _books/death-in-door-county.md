@@ -11,6 +11,11 @@ categories:
   - fiction
 regions:
   - great-lakes
+featured: false
+featured_month: ""
+featured_region: "great-lakes"
+pull_quote: "A Lake Michigan mystery set in Door County — perfect reading while cruising the Great Lakes."
+
 age_group: adult
 book_club: false
 tags:
