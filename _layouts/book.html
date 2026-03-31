@@ -163,6 +163,7 @@ layout: default
         {% assign notes_content = content | strip | remove: "\n" %}
         {% if notes_content.size > 0 %}
           <div class="book-notes">
+            <h2 class="book-notes-title">Thoughts from a Looper:</h2>
             {{ content }}
           </div>
         {% endif %}

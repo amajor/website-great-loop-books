@@ -891,13 +891,22 @@ a:hover { color: var(--accent-dark); }
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--border);
 }
-.book-description p { margin-bottom: 1rem; }
+.book-description p, 
+.book-notes p,
+.book-notes hr { 
+  margin-bottom: 1rem; 
+}
 .book-notes {
+  margin-bottom: 2rem;
   margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
   color: var(--text);
   line-height: 1.75;
+}
+.book-notes-title {
+  font-family: var(--font-display);
+  margin-bottom: 1rem; 
 }
 .affiliate-note {
   font-size: 0.78rem;
