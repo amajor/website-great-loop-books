@@ -22,6 +22,11 @@ regions:
 
 age_group: adult
 
+featured: false
+featured_month: "2026-04"
+featured_region: "georgia-carolinas"
+pull_quote: "The story of two people who traded their everyday lives for nine months on America's Great Loop."
+
 book_club: true
 book_club_month: "April 2026"
 book_club_date: "2026-04"
