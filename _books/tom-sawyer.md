@@ -12,6 +12,11 @@ categories:
   - fiction
 regions:
   - river-system
+featured: false
+featured_month: ""
+featured_region: "river-system"
+pull_quote: ""
+
 age_group: middle-grade
 book_club: false
 tags:

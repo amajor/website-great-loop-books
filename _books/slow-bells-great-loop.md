@@ -18,6 +18,11 @@ categories:
 regions:
   - general
 
+featured: false
+featured_month: ""
+featured_region: "river-system"
+pull_quote: "A thoughtful, unhurried account of life on the Great Loop — savoring every mile."
+
 age_group: adult
 book_club: true
 book_club_month: "February 2026"
