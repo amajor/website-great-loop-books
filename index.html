@@ -84,9 +84,9 @@ title: Great Loop Books
         <a href="/book-club/" class="btn btn--primary">See the Reading List →</a>
       </div>
       <div class="club-spotlight__books">
-        {% assign club_books = site.books | where: "book_club", true | limit: 4 %}
+        {% assign club_books = site.books | where: "book_club", true | sort: "book_club_date" | reverse %}
         <div class="mini-stack">
-          {% for book in club_books %}
+          {% for book in club_books limit: 4 %}
             <a href="{{ book.url | relative_url }}" class="mini-book" title="{{ book.title }}">
               {% if book.cover_image and book.cover_image != "" %}
                 <img src="{{ book.cover_image }}" alt="{{ book.title }}">
