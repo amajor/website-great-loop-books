@@ -19,7 +19,6 @@ categories:
   - fiction
 regions:
   - florida-keys-bahamas
-  - florida-east-coast
 age_group: middle-grade
 book_club: false
 book_club_month: ""
