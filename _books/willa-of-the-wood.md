@@ -1,49 +1,37 @@
 ---
-title: "Willa of the Wood"
-author: "Robert Beatty"
-cover_image: "https://covers.openlibrary.org/b/isbn/9781368005845-L.jpg"
-
+title: Willa of the Wood
+author: Robert Beatty
+cover_image: https://covers.openlibrary.org/b/isbn/9781368005845-L.jpg
 summary: "A #1 New York Times bestselling middle grade adventure set in 1900 in the Great Smoky Mountains — a young forest girl with ancient magic must choose between the dying world she knows and the dangerous humans she's been taught to fear."
-
 description: |
   Twelve-year-old Willa is a night-spirit of the Great Smoky Mountains — her clan's best thief, trained to creep into the homes of the day-folk under cover of darkness and take what they won't miss. It's dangerous work. The day-folk kill whatever they don't understand. But Willa will do anything to win the approval of the padaran, the charismatic leader of her Faeran people.
 
   When Willa's curiosity leaves her hurt and stranded in the day-folk world, she discovers something that changes everything: not all humans are the monsters she was taught to fear. And the magical foundations that have protected the Faeran for generations are crumbling from within.
 
   Set in the same world as Beatty's beloved Serafina series (though no prior knowledge is needed), this atmospheric adventure weaves together Cherokee history, Appalachian lore, and the old-growth forests of what is now Great Smoky Mountains National Park. A #1 New York Times bestseller, Amazon Best Book of 2018, and recommended by the Great Smoky Mountains National Park itself.
-
 amazon_asin: "1368005845"
 bookshop_url: ""
-aglca_url: ""
 other_buy_url: ""
 other_buy_label: ""
-
 categories:
   - regional
   - kids
   - fiction
-
 regions:
   - georgia-carolinas
-
 age_group: middle-grade
-
 book_club: false
 book_club_month: ""
 book_club_date: ""
-
 featured: false
 featured_month: ""
-featured_region: "georgia-carolinas"
-pull_quote: "A moving, atmospheric journey of hope set in the mountains just west of the Carolina ICW."
-
+featured_region: georgia-carolinas
+pull_quote: A moving, atmospheric journey of hope set in the mountains just west of the Carolina ICW.
 by_looplife: false
-
 formats:
   kindle: true
   print: true
   audiobook: true
-
 tags:
   - historical fiction
   - fantasy

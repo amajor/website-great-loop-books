@@ -11,7 +11,6 @@ description: |
 
 amazon_asin: ""
 bookshop_url: ""
-aglca_url: ""
 other_buy_url: ""
 other_buy_label: ""
 
