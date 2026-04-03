@@ -32,4 +32,5 @@ tags:
   - young-adult
   - chesapeake
   - historical-fiction
+  - newbery-medal
 ---
