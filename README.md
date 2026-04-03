@@ -81,7 +81,7 @@ greatloopbooks/
 `dreaming-planning` · `memoirs` · `boat-life` · `kids` · `journals` · `reference` · `fiction` · `regional`
 
 ### Region options:
-`general` · `norfolk-new-york` · `erie-canal` · `canada` · `great-lakes` · `river-system` · `florida-keys-bahamas` · `florida-east-coast` · `georgia-carolinas`
+`general` · `norfolk-new-york` · `erie-canal` · `canada` · `great-lakes` · `river-system` · `gulf-coast` · `florida-keys-bahamas` · `florida-east-coast` · `georgia-carolinas`
 
 ---
 

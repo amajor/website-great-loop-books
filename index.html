@@ -109,9 +109,9 @@ title: Great Loop Books
       <p class="section-sub">Find books that match where you are — or where you're headed</p>
     </div>
     <div class="region-grid">
-      {% assign regions = "dreaming-planning,norfolk-new-york,erie-canal,canada,great-lakes,river-system,florida-keys-bahamas,florida-east-coast,georgia-carolinas" | split: "," %}
-      {% assign region_names = "Dreaming & Planning,Norfolk to New York,The Erie Canal,Canada,The Great Lakes,The River System,FL Keys & Bahamas,Florida East Coast,Georgia & Carolinas" | split: "," %}
-      {% assign region_icons = "🧭,⚓,🏗️,🍁,🌊,🛥️,🐠,🚀,🌿" | split: "," %}
+      {% assign regions = "dreaming-planning,norfolk-new-york,erie-canal,canada,great-lakes,river-system,gulf-coast,florida-keys-bahamas,florida-east-coast,georgia-carolinas" | split: "," %}
+      {% assign region_names = "Dreaming & Planning,Norfolk to New York,The Erie Canal,Canada,The Great Lakes,The River System,The Gulf Coast,FL Keys & Bahamas,Florida East Coast,Georgia & Carolinas" | split: "," %}
+      {% assign region_icons = "🧭,⚓,🏗️,🍁,🌊,🛥️,⛵,🐠,🚀,🌿" | split: "," %}
 
       {% for region in regions %}
         {% assign region_count = site.books | where_exp: "book", "book.regions contains region" | size %}

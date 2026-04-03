@@ -39,8 +39,9 @@ categories:
   - memoirs
 
 # Loop region(s) this book covers — optional
-# Options: general, erie-canal, great-lakes, river-system, florida-keys-bahamas,
-#          florida-east-coast, georgia-carolinas, norfolk-new-york, canada
+# Options: general, erie-canal, great-lakes, river-system, gulf-coast, 
+#          florida-keys-bahamas, florida-east-coast, georgia-carolinas, 
+#          norfolk-new-york, canada
 regions:
   - general
 
