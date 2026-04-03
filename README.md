@@ -19,7 +19,6 @@ title: "Book Title"
 summary: "One sentence description."
 categories:
   - memoirs
-amazon_url: "https://amzn.to/XXXXX"
 ---
 ```
 

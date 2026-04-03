@@ -41,6 +41,7 @@ tags:
   - florida-keys
   - kids
   - mystery
+  - carl-hiaasen
 ---
 If you've spent time in Key West, Wrecker will feel uncannily familiar. The cemetery where much of the story unfolds is a real place and a genuine Key West landmark — free-roaming chickens, iguanas, and all. The docks, the patch reefs, the back channels Wrecker navigates in his skiff — Hiaasen spent years covering Key West as a crime reporter for the Miami Herald, and it shows in every street corner and character.
 

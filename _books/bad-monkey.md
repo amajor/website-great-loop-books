@@ -42,6 +42,7 @@ tags:
   - humor
   - adult-fiction
   - tv-adaptation
+  - carl-hiaasen
 ---
 This one is set squarely in Looper territory — the Florida Keys and the Bahamas, specifically Andros Island, which some Loopers visit on their way to or from Nassau. If you're making the Bahamas crossing or anchoring in the Keys waiting for your weather window, Bad Monkey is an ideal companion. The landscape Hiaasen writes about is exactly what's outside your porthole.
 
