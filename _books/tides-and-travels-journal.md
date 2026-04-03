@@ -30,4 +30,5 @@ tags:
   - journal
   - great-loop
   - keepsake
+  - looper-authored
 ---

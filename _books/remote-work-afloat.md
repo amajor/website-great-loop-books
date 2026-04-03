@@ -34,4 +34,5 @@ tags:
   - remote-work
   - planning
   - practical-guide
+  - looper-authored
 ---

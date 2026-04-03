@@ -31,4 +31,5 @@ tags:
   - memoir
   - couples-cruising
   - great-loop
+  - looper-authored
 ---

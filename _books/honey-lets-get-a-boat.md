@@ -36,6 +36,7 @@ tags:
   - memoir
   - couples-cruising
   - great-loop
+  - looper-authored
 ---
 
 This is one of those books almost every Looper has heard of (or been handed at some point), and for good reason. It captures that early-stage dreaming so well — the “could we actually do this?” phase that so many of us start in.  

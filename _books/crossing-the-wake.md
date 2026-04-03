@@ -35,6 +35,7 @@ tags:
   - solo-travel
   - women-cruisers
   - great-loop
+  - looper-authored
 ---
 
 _Crossing the Wake_ is one of those books that captures the full arc of a Looper’s journey: from dreaming and planning to tackling the miles, handling the small crises, and reflecting on how the trip changes you. Tanya Binford’s honesty and humor make it easy to relate, whether you’re single-handedly running your boat or just imagining what it would be like.

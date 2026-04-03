@@ -36,6 +36,7 @@ tags:
   - memoir
   - great-loop
   - solo-travel
+  - looper-authored
 ---
 Reading this while cruising or planning your Loop gives it extra resonance. Doug’s early shakedown trips remind you that every mile counts, and his experiences on rivers, canals, and lakes feel like a companionable guide for those still building confidence.  
 

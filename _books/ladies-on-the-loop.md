@@ -35,4 +35,5 @@ tags:
   - women-cruisers
   - great-loop
   - humor
+  - looper-authored
 ---
