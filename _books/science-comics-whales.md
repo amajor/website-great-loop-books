@@ -20,14 +20,14 @@ categories:
 regions:
   - gulf-coast
   - florida-east-coast
-age_group: early-reader
+age_group: middle-grade
 book_club: false
 book_club_month: ""
 book_club_date: ""
 featured: false
 featured_month: ""
 featured_region: ""
-pull_quote: ""
+pull_quote: A real marine scientist wrote this — and made it a page-turner. Perfect reading on the water.
 by_looplife: false
 formats:
   kindle: true

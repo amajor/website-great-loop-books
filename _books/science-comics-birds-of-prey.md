@@ -14,7 +14,7 @@ categories:
   - kids
 regions:
   - river-system
-age_group: early-reader
+age_group: middle-grade
 book_club: false
 book_club_month: ""
 book_club_date: ""
