@@ -43,3 +43,21 @@ Reading this while cruising or planning your Loop gives it extra resonance. Doug
 Loopers will appreciate the realistic depictions of mechanical hiccups, marina life, and the transitions between freshwater and saltwater. There’s also a gentle reminder that comfort and luxury are relative — and that sometimes the most memorable moments come from simple pleasures, like a stop at a local ice cream shop or a quiet evening watching the sun set over the water.  
 
 Above all, Doug’s philosophy is deeply Looper: take it slow, keep tools and curiosity onboard, and savor each mile, because the journey is the reward.
+
+### Why We Read It in the [Great Loop Book Club](/book-club/)
+
+This one was chosen for Dreamers and Planners who are in the middle of figuring it out. The ones with spreadsheets and questions and a boat they're not quite sure about yet.
+
+Doug's story is a reminder that the Loop doesn't begin the day you leave the dock. It begins the moment you start taking the dream seriously.
+
+His three-phase approach to getting a new boat ready, and his philosophy of shakedown cruises before big passages, offer a grounded and realistic model for anyone still in the building-confidence stage.
+
+### What the Book Club Loved
+
+The honesty about the process.
+
+Doug doesn't glamorize the preparation or fast-forward through the learning curve. Members appreciated that he made the mechanical and logistical side of Loop prep feel approachable rather than intimidating.
+
+The moment on day one of the Loop when the engine dies after one-tenth of a mile also became a favorite. Not because it was funny, but because it was so perfectly, reassuringly real.
+
+And his final note that the way through 6,000 miles was simply 30 to 40 miles at a time landed with a lot of readers.

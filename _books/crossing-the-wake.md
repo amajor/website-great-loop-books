@@ -45,3 +45,13 @@ Early on, it’s inspiring to see her take action before retirement and embrace 
 Later chapters highlight the growth every Looper experiences: building confidence, solving problems, navigating long stretches like the Mississippi, and leaning on the community knowledge that makes the journey possible. The book also touches on something every cruiser eventually notices: how the Loop can change your perspective on life, relationships, and what “home” really means.
 
 Whether you’re dreaming, planning, or already underway, this memoir is a reminder that the Loop isn’t just a route; it’s a journey that shapes you along the way.
+
+### Why We Read It in the [Great Loop Book Club](/book-club/)
+
+Solo Looping is its own category of adventure, and Tanya's story offers a rare, honest look at what it's actually like, especially as a woman doing it at a time when it was uncommon. Her book came up in conversation at a Looperpalooza event in Punta Gorda when AGLCA director Kim Russo mentioned it, and that was enough of an endorsement to add it to our list.
+
+### What the Book Club Loved
+
+Tanya doesn't gloss over her inexperience; she leans into it, which makes the whole journey feel real and accessible rather than intimidating. Her backstory before the Loop is woven in naturally, so you understand exactly why this trip mattered so much to her personally. And Tanya's openness about navigating the Looper community as a solo woman adds a layer to the story that most Loop books don't touch.
+
+The writing style is warm and specific. She gives you enough detail to feel like you're on the boat with her without losing the forward momentum of the narrative.

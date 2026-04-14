@@ -44,3 +44,13 @@ This is one of those books almost every Looper has heard of (or been handed at s
 Reading it now, after completing the Loop ourselves, it feels both nostalgic and grounding. You see the nerves, the missteps, and the excitement of figuring things out as you go and it’s a good reminder that no one starts out as an expert.  
 
 It’s especially relatable for couples, too. The communication, the shared decisions, and the occasional tension all feel very real. If you’re in the dreaming or planning phase, this one has a way of making the Loop feel possible. And if you’ve already done it, it’s a fun trip back to the beginning.
+
+### Why We Read It in the [Great Loop Book Club](/book-club/)
+
+This was our very first book club selection, and the choice was intentional. If you're in the dreaming or planning stage, there's something powerful about reading a story from someone who started exactly where you are (uncertain, excited, and not quite ready) and did it anyway.
+
+The Stobs' story has been passing from Looper to Looper for nearly three decades for a reason. It's the book that makes the Loop feel possible.
+
+### What the Book Club Loved
+
+The honesty. Ron and Eva don't skip the hard parts or pretend every day was magical. They write about the mistakes, the exhaustion, the moments of doubt... and somehow that makes the whole adventure more inspiring, not less. Members also loved how relatable the Stobs are. You don't need a sailing background or a big budget to connect with this story. You just need the feeling that something needs to change.

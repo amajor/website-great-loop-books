@@ -974,7 +974,9 @@ a:hover { color: var(--accent-dark); }
   color: var(--text);
   line-height: 1.75;
 }
-.book-notes-title {
+.book-notes-title,
+.book-notes > h2,
+.book-notes > h3 {
   font-family: var(--font-display);
   margin-bottom: 1rem; 
 }

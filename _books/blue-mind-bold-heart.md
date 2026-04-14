@@ -40,3 +40,13 @@ tags:
 Reading _Blue Mind, Bold Heart_ as a Looper felt like seeing the journey we all know firsthand articulated beautifully. Michael captures the mental shifts, the moments of quiet awe, and the unexpected lessons that come from months on the water. There’s the thrill of handling mishaps, the satisfaction of growing into the “experienced” cruiser, and the challenge of returning to land with a different perspective.  
 
 For anyone who has cruised, or dreams of cruising the Great Loop, this book hits the familiar notes: the stillness of early mornings on the river, the slow rhythms of life afloat, and the clarity that comes when you trade routine for the unpredictable. It’s a reminder that the Loop doesn’t just change where you go — it changes how you see yourself and the world.
+
+### Why We Read It in the [Great Loop Book Club](/book-club/)
+
+We read this one in January, which felt right. A new year, a fresh perspective, and a book about what it looks like to finally stop waiting and go. Michael spent fifteen years between first hearing about the Loop and actually leaving the dock, and he's honest about what that gap cost him and what finally closed it.
+
+That's a story a lot of Dreamers and Planners can sit with.
+
+### What the Book Club Loved
+
+The honesty about the mental side of it. Michael doesn't just write about what went wrong on the water. He writes about what was already going wrong before they left, and how the Loop forced him to confront it. The shift in his prayers that shows up in the middle chapters (from asking for calm seas to asking for a seaworthy vessel and the wisdom to navigate whatever came) became one of those quietly unforgettable moments that members kept coming back to. It's a small detail that carries a lot of weight.

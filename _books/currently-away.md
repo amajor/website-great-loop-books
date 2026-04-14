@@ -33,3 +33,8 @@ tags:
   - great-loop
   - looper-authored
 ---
+_Currently Away_ follows Bruce and Maggie Tate, a couple who found themselves ground down by pandemic isolation and the fractures spreading through their community and country. With no boating experience and everything to lose, Maggie made the call: buy a boat and do the Great Loop. Over nine months, they navigated 6,000 miles of rivers, coastal waters, lakes, and locks — and found that the journey rebuilt more than just their sense of adventure. It's a story about two people who needed the Loop as much as they wanted it.
+
+### Why We Read It in the [Great Loop Book Club](/book-club/)
+
+The Tates' story resonates with something many Loopers feel but don't always say out loud... that the Loop isn't just a trip; it's often a response to something. Whether it's a life transition, a need for reset, or a relationship that needs open water and shared purpose, _Currently Away_ puts that impulse into honest, specific words.
