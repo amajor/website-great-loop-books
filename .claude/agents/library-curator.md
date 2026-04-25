@@ -153,9 +153,18 @@ tags:
 ---
 
 ## COVER IMAGE SOURCING (in order of preference)
-1. Open Library by ISBN: `https://covers.openlibrary.org/b/isbn/[ISBN]-L.jpg`
-2. Open Library by ASIN/OLID if ISBN unavailable
-3. Leave blank with `# TODO: add cover image` comment — never leave it as an empty string without the comment
+
+Always download the cover image and save it locally. Never use a remote URL as the final `cover_image` value.
+
+1. **Open Library by ISBN** — fetch `https://covers.openlibrary.org/b/isbn/[ISBN]-L.jpg`. Check the response is a real image (not a 1x1 or sub-1KB placeholder). If valid, download it.
+2. **Amazon CDN** — if Open Library has no cover (or no ISBN exists), use the cover image URL found on the Amazon product page.
+3. **Leave blank** with a `# TODO: add cover image` comment only if neither source has an image.
+
+**Saving the file:**
+- Save to: `assets/images/books/great-loop-books-[slug].jpg` (where `[slug]` matches the book's file slug)
+- Download with: `curl -L -o assets/images/books/great-loop-books-[slug].jpg [image-url]`
+- Set `cover_image` in the frontmatter to: `/assets/images/books/great-loop-books-[slug].jpg`
+- Verify the downloaded file is larger than 1KB before using it; if not, fall through to the next source
 
 ---
 
