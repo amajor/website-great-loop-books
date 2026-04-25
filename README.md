@@ -4,7 +4,53 @@ A Jekyll site for Great Loop book recommendations, organized by region, category
 
 ---
 
-## 📖 Adding a New Book
+## 🤖 Adding Books with the Librarian Agent
+
+The fastest way to add books is with the **library-curator agent** in Claude Code. Open this repo in VS Code with Claude Code, then just describe what you want to add.
+
+### What the agent handles automatically:
+- Looks up book details from an Amazon link or ASIN
+- Builds the affiliate URL using your `greatloopbooks-20` tag
+- Sources a cover image from Open Library
+- Generates the correct file slug
+- Writes a warm, reader-friendly summary and description
+- Tags categories and regions from the approved lists
+- Checks for duplicates before creating anything
+
+### How to invoke it:
+
+**From an Amazon link:**
+```
+@agent-library-curator add this book: https://www.amazon.com/dp/B0CKQ3DTTF
+```
+
+**From an ASIN:**
+```
+@agent-library-curator add ASIN B09KQ9Y9S5, it's a Great Loop memoir
+```
+
+**From a title and author (no Amazon link):**
+```
+@agent-library-curator add "Finding Serendipity" by Lani Goring — Loop memoir, also fits regional for the Gulf Coast
+```
+
+**Audit the collection:**
+```
+@agent-library-curator audit _books/ for missing fields
+```
+
+**Update an existing book:**
+```
+@agent-library-curator update crossing-the-wake.md — add bookshop_url and set featured: true
+```
+
+The agent will create the `.md` file in `_books/` with all frontmatter filled in. Review it in Obsidian or VS Code, make any edits, then commit to GitHub to publish.
+
+---
+
+## 📖 Adding a Book Manually
+
+If you prefer to add books by hand:
 
 1. In Obsidian, create a new file in the `_books/` folder
 2. Name the file with the book's slug, e.g. `my-new-book.md`
@@ -36,6 +82,10 @@ Update all Amazon links to use short affiliate URLs from your Associates dashboa
 ```
 greatloopbooks/
 ├── _books/              ← One .md file per book
+├── .claude/
+│   ├── CLAUDE.md        ← Site context loaded by Claude Code every session
+│   └── agents/
+│       └── library-curator.md  ← Librarian agent definition
 ├── _layouts/
 │   ├── default.html     ← Base HTML with header/footer
 │   ├── book.html        ← Individual book detail page
@@ -64,7 +114,7 @@ greatloopbooks/
 | `author` | — | Author name(s) |
 | `summary` | ✅ | 1–2 sentence description for listing pages |
 | `description` | — | Fuller write-up for the book's own page |
-| `amazon_url` | — | Use shortened affiliate link |
+| `amazon_asin` | — | Just the ASIN, e.g. `B0CKQ3DTTF` |
 | `bookshop_url` | — | Add when you set up Bookshop.org |
 | `categories` | ✅ | See options below |
 | `regions` | — | See options below |
@@ -132,8 +182,6 @@ Best options (in order of ease):
 
 ## Run it locally
 
-Here are the exact commands to run from inside your `greatloopbooks` folder:
-
 **First time only — install dependencies:**
 ```bash
 bundle install
@@ -146,12 +194,10 @@ bundle exec jekyll serve
 
 Then open **http://localhost:4000** in your browser.
 
----
-
 **Useful variations:**
 
 ```bash
-# Auto-rebuild when you save files (watches for changes)
+# Auto-rebuild when you save files
 bundle exec jekyll serve --livereload
 
 # If port 4000 is already in use
@@ -163,11 +209,10 @@ bundle exec jekyll serve --verbose
 
 ---
 
-**If you don't have Ruby/Jekyll installed yet**, here's the one-time setup depending on your OS:
+**If you don't have Ruby/Jekyll installed yet:**
 
 **Mac:**
 ```bash
-# Install Homebrew if you don't have it, then:
 brew install ruby
 echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
@@ -175,7 +220,7 @@ gem install bundler
 ```
 
 **Windows:**
-Download and run the RubyInstaller from [rubyinstaller.org](https://rubyinstaller.org) — use the "Ruby+Devkit" version. Then in a new terminal:
+Download and run the RubyInstaller from [rubyinstaller.org](https://rubyinstaller.org) — use the "Ruby+Devkit" version. Then:
 ```bash
 gem install bundler
 ```
@@ -185,7 +230,3 @@ gem install bundler
 sudo apt-get install ruby-full build-essential
 gem install bundler
 ```
-
----
-
-Once `bundle exec jekyll serve` is running, any time you edit and save a `.md` book file or a layout, Jekyll rebuilds automatically and you just refresh the browser to see changes. The `--livereload` flag even does the refresh for you automatically.
