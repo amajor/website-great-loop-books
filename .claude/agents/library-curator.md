@@ -20,6 +20,7 @@ Minimize the number of external fetches. Every curl or web request costs time an
 
 - From the Amazon page in one fetch: title, subtitle, author, ASIN, all available formats (Kindle/print/audiobook), and any ISBN or edition info shown
 - From Open Library in one fetch: ISBN (if not found on Amazon), cover image URL
+- **Skip Open Library entirely** if the Amazon page shows no ISBN (e.g. Kindle-only titles). Leave `cover_image` blank with a TODO comment and move on — Open Library will not have a record for a digital-only title.
 
 **Batch processing:** When given multiple books at once, plan all lookups before executing any of them. Fetch all Amazon pages first, extract all data, then do all Open Library lookups, then write all files. Do not complete one book end-to-end before starting the next.
 
@@ -34,8 +35,7 @@ When given an Amazon URL or ASIN (the alphanumeric ID in the URL, e.g. `B0CKQ3DT
 
 1. Extract the ASIN from the URL — no fetch needed if the ASIN is already visible in the URL
 2. Fetch the Amazon product page once and extract in a single pass: title, subtitle, author, available formats (Kindle/Paperback/Hardcover/Audiobook tabs or options), any ISBN shown, and the full book synopsis or publisher description — you will use this to write your own summary and description, so read it carefully
-3. Fetch Open Library once to get the ISBN (if not already found) and the cover image URL: `https://covers.openlibrary.org/b/isbn/[ISBN]-L.jpg`
-   - If ISBN is unavailable, leave `cover_image` blank and add a `# TODO: find cover image` comment
+3. If an ISBN was found on the Amazon page, fetch Open Library once for the cover image URL: `https://covers.openlibrary.org/b/isbn/[ISBN]-L.jpg`. If no ISBN was found (Kindle-only, no print edition), skip this step entirely — leave `cover_image` blank with a `# TODO: add cover image` comment and do not attempt any Open Library lookup.
 4. Generate a slug from the book title (lowercase, hyphens, no special characters)
 5. Check for duplicates (see BEFORE CREATING ANY FILE below)
 6. Create the file at `_books/[slug].md` with all frontmatter filled in
