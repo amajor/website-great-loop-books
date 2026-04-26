@@ -20,9 +20,9 @@ categories:
 regions:
   - general
 age_group: adult
-book_club: false
-book_club_month: ""
-book_club_date: ""
+book_club: true
+book_club_month: May 2026
+book_club_date: 2026-05
 featured: false
 featured_month: ""
 featured_region: ""
